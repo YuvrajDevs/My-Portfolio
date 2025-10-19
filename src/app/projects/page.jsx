@@ -122,7 +122,7 @@ export default function ProjectsPage() {
                 </main>
                 
                 <footer className="text-center text-gray-700 mt-24 pb-8">
-                  <p>&copy; 2024 Yuvraj Singh Shekhawat. Built with passion and code.</p>
+                  <p>&copy; 2025 Yuvraj Singh Shekhawat | Built with passion and definitely not YAML !</p>
                 </footer>
             </div>
 
