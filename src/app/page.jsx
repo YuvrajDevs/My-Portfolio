@@ -105,6 +105,14 @@ export default function HomePage() {
                 <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Learning New Tech</span>
                 <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">UI/UX Design</span>
                 <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Brainstorming</span>
+                <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Yummy Food</span>
+                <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Mysteries</span>
+                <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Long walks</span>
+                <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Night Sky</span>              
+                <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Exploring Tech</span>
+                <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Music</span>
+                <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Long Philosophical Talks</span>
+                <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Amusement Parks lol</span>              
               </div>
             </div>
           </section>
@@ -126,8 +134,9 @@ export default function HomePage() {
               ))}
             </div>
           </section>
-
-          <section id="credentials" className={`mt-20`}>
+          
+          {/* Certifications */}
+          {/* <section id="credentials" className={`mt-20`}>
             <h2 className="text-3xl font-bold mb-6 tracking-tight text-white">{language === 'de' ? 'Zertifizierungen' : 'Certifications'}</h2>
             <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-1 p-6 bg-[#0d0d0d] rounded-lg border border-[#262626] flex items-center justify-between">
@@ -149,11 +158,12 @@ export default function HomePage() {
                     </a>
                 </div>
             </div>
-          </section>
+          </section> */}
+
         </main>
 
         <footer className="text-center text-gray-700 mt-24 pb-8">
-          <p>&copy; 2024 Yuvraj Singh Shekhawat. Built with passion and code.</p>
+          <p>&copy; 2025 Yuvraj Singh Shekhawat | Built with passion and definitely not YAML !</p>
         </footer>
     </div>
   );
