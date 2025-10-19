@@ -48,10 +48,13 @@ export default function Navbar() {
             onClick={toggleLanguage}
             className="inline-flex items-center rounded-md border border-[#262626] bg-[#0d0d0d] px-3 py-1 text-sm text-gray-400 hover:text-white hover:border-gray-600 transition-colors cursor-pointer"
             aria-label="Toggle language"
+            title="Cycle EN / DE / JA"
           >
             <span className={`${language === 'en' ? 'font-semibold text-white' : 'text-gray-500'}`}>EN</span>
             <span className="mx-2 text-gray-700">/</span>
             <span className={`${language === 'de' ? 'font-semibold text-white' : 'text-gray-500'}`}>DE</span>
+            <span className="mx-2 text-gray-700">/</span>
+            <span className={`${language === 'ja' ? 'font-semibold text-white' : 'text-gray-500'}`}>JA</span>
           </button>
         </nav>
       </div>

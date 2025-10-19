@@ -93,11 +93,13 @@ export default function ProjectsPage() {
 
                 <main>
                     <section id="projects">
-                        <h2 className="text-4xl font-bold mb-2 tracking-tight text-white">{language === 'de' ? 'Projekte' : 'Projects'}</h2>
-                        <p className="text-gray-400 mb-10 max-w-2xl">
+                        <h2 className="text-4xl font-bold mb-2 tracking-tight text-white">{language === 'de' ? 'Projekte' : language === 'ja' ? 'プロジェクト' : 'Projects'}</h2>
+                        <p className="text-gray-400 mb-10 leading-relaxed max-w-none">
                             {language === 'de'
                               ? 'Eine Auswahl meiner Arbeiten in Cloud-Architektur und DevOps. Klicken Sie auf eine Karte, um mehr zu erfahren.'
-                              : "Here's a selection of my work that showcases my skills in cloud architecture, DevOps, and building robust applications. Click on any card to learn more."}
+                              : language === 'ja'
+                                ? 'クラウドアーキテクチャやDevOpsのスキルを示すプロジェクトの一部です。カードをクリックして詳細をご覧ください。'
+                                : "Here's a selection of my work that showcases my skills in cloud architecture, DevOps, and building robust applications. Click on any card to learn more."}
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {projectData.map((project) => (

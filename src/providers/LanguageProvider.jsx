@@ -19,7 +19,9 @@ export default function LanguageProvider({ children }) {
 
   const toggleLanguage = useCallback(() => {
     setLanguage((prev) => {
-      const next = prev === "en" ? "de" : "en";
+      const order = ["en", "de", "ja"];
+      const idx = order.indexOf(prev);
+      const next = order[(idx + 1) % order.length] || "en";
       try { window.localStorage.setItem("lang", next); } catch {}
       return next;
     });

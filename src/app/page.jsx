@@ -64,29 +64,40 @@ export default function HomePage() {
         <main>
           <section id="about" className={`grid md:grid-cols-3 gap-12 items-start`}>
             <div className="md:col-span-2">
-              <h2 className="text-4xl font-bold mb-6 tracking-tight text-white">{language === 'de' ? 'Über mich' : 'About Me'}</h2>
+              <h2 className="text-4xl font-bold mb-6 tracking-tight text-white">{language === 'de' ? 'Über mich' : language === 'ja' ? '自己紹介' : 'About Me'}</h2>
               <ul className="space-y-3 text-gray-400 list-disc list-inside max-w-prose">
                   {language === 'de' ? (
                     <>
-                      <li>Leidenschaftlich in Design und solider Technik vereint.</li>
-                      <li>Fokus auf zuverlässige und schöne Nutzererlebnisse.</li>
-                      <li>Erfahrung von Konzept bis Deployment.</li>
-                      <li>Präzise Systeme mit Liebe zum Detail.</li>
-                      <li>Ich gestalte ansprechende Oberflächen.</li>
-                      <li>Ich sorge für Leistung – auch unter Last.</li>
-                      <li>Engagiert für hochwertige End-to-End-Lösungen.</li>
-                      <li>Funktional und elegant – das Ziel.</li>
+                    <li>Ich entwerfe Pipelines wie Erlebnisse, klar, logisch und leicht überkoffeiniert.</li>
+                    <li>Erfahren in der Verwaltung des gesamten Projektlebenszyklus, von Konzept bis Deployment.</li>
+                    <li>Wenn es automatisiert werden kann, bin ich wahrscheinlich schon dabei, das YAML zu schreiben lol.</li>
+                    <li>Ich erstelle visuell fesselnde Oberflächen, die Benutzer lieben.</li>
+                    <li>Ich stelle sicher, dass Systeme unter jeder Last einwandfrei funktionieren.</li>
+                    <li>Engagiert für den Aufbau hochwertiger End-to-End-Lösungen.</li>
+                    <li>Meine Neugier kennt keine Ruhe. Wenn es neue Technologie ist, beschäftige ich mich damit.</li>
+                    <li>Ich liebe YAMLs wirklich lol.</li>
+                  </>                  
+                  ) : language === 'ja' ? (
+                    <>
+                      <li>体験を設計するようにパイプラインを設計します。シンプルで論理的、少しカフェイン強め。</li>
+                      <li>構想からデプロイまで、プロジェクトのライフサイクル全体をリードできます。</li>
+                      <li>自動化できるものは、だいたいもうYAMLを書き始めています。</li>
+                      <li>ユーザーに愛されるビジュアルを大切にしたUIを作ります。</li>
+                      <li>どんな負荷でも安定して動作するシステムを目指します。</li>
+                      <li>品質にこだわったエンドツーエンドの開発。</li>
+                      <li>新しい技術への好奇心は止まりません。見つけたら触ってみます。</li>
+                      <li>YAML、大好きです。</li>
                     </>
                   ) : (
                     <>
-                      <li>Passionate about merging creative design with robust engineering.</li>
-                      <li>Focused on crafting reliable and beautiful user experiences.</li>
+                      <li>I design pipelines like I design experiences clean, logical, and slightly overcaffeinated.</li>
                       <li>Skilled in managing the full project lifecycle, from concept to deployment.</li>
-                      <li>Adept at building systems with precision and attention to detail.</li>
+                      <li>If it can be automated, I’m already halfway through writing the YAML lol. </li>
                       <li>I create visually captivating interfaces that users love.</li>
                       <li>I ensure systems perform flawlessly under any load.</li>
                       <li>Dedicated to building high-quality, end-to-end solutions.</li>
-                      <li>Driven to deliver products that are both functional and elegant.</li>
+                      <li>My curiosity has no chill. If it’s new tech, I’m poking at it.</li>
+                      <li>I Really Love YAMLs lol.</li>
                     </>
                   )}
               </ul>
@@ -97,7 +108,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="md:col-span-1 bg-[#0d0d0d]/50 p-6 rounded-lg border border-[#262626]">
-              <h3 className="font-semibold text-white mb-4">{language === 'de' ? 'Was mir gefällt' : 'What I Enjoy'}</h3>
+              <h3 className="font-semibold text-white mb-4">{language === 'de' ? 'Was mir gefällt' : language === 'ja' ? '好きなこと' : 'What I Enjoy'}</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">DevOps</span>
                 <span className="bg-[#1a1a1a] text-gray-300 text-xs font-medium px-3 py-1 rounded-full">Cloud Architecture</span>
@@ -118,7 +129,7 @@ export default function HomePage() {
           </section>
 
           <section id="tools" className={`mt-20`}>
-            <h2 className="text-3xl font-bold mb-6 tracking-tight text-white">{language === 'de' ? 'Werkzeuge & Technologien' : 'Tools & Technologies'}</h2>
+            <h2 className="text-3xl font-bold mb-6 tracking-tight text-white">{language === 'de' ? 'Werkzeuge & Technologien' : language === 'ja' ? 'ツールと技術' : 'Tools & Technologies'}</h2>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-x-6 gap-y-8">
               {tools.map(({ label, file }) => (
                 <div key={file} className="flex flex-col items-center justify-center">
